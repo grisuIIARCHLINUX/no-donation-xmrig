@@ -1,0 +1,127 @@
+Performing C SOURCE FILE Test FEATURE_ssse3_NOFLAG failed with the following output:
+Change Dir: /run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/sbin/make -f Makefile cmTC_28e60/fast && /usr/sbin/make  -f CMakeFiles/cmTC_28e60.dir/build.make CMakeFiles/cmTC_28e60.dir/build
+make[1]: Verzeichnis „/run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_28e60.dir/src.c.o
+/usr/sbin/cc -DFEATURE_ssse3_NOFLAG  -Wall -Wno-strict-aliasing -maes  -o CMakeFiles/cmTC_28e60.dir/src.c.o -c "/run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp/src.c"
+In Datei, eingebunden von /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/immintrin.h:37,
+                 von /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/x86intrin.h:32,
+                 von /run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp/src.c:1:
+/run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp/src.c: In Funktion »function_ssse3«:
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/tmmintrin.h:136:1: Fehler: Inlining beim Aufruf von »_mm_shuffle_epi8« mit »always_inline« fehlgeschlagen: target specific option mismatch
+  136 | _mm_shuffle_epi8 (__m128i __X, __m128i __Y)
+      | ^~~~~~~~~~~~~~~~
+/run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp/src.c:5:12: Anmerkung: von hier aufgerufen
+    5 |     *dst = _mm_shuffle_epi8(*a, *b);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [CMakeFiles/cmTC_28e60.dir/build.make:78: CMakeFiles/cmTC_28e60.dir/src.c.o] Fehler 1
+make[1]: Verzeichnis „/run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp“ wird verlassen
+make: *** [Makefile:127: cmTC_28e60/fast] Fehler 2
+
+
+Source file was:
+#include <x86intrin.h>
+
+void function_ssse3(__m128i *dst, const __m128i *a, const __m128i *b)
+{
+    *dst = _mm_shuffle_epi8(*a, *b);
+}
+
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FEATURE_xop_NOFLAG failed with the following output:
+Change Dir: /run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/sbin/make -f Makefile cmTC_33710/fast && /usr/sbin/make  -f CMakeFiles/cmTC_33710.dir/build.make CMakeFiles/cmTC_33710.dir/build
+make[1]: Verzeichnis „/run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_33710.dir/src.c.o
+/usr/sbin/cc -DFEATURE_xop_NOFLAG  -Wall -Wno-strict-aliasing -maes  -o CMakeFiles/cmTC_33710.dir/src.c.o -c "/run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp/src.c"
+In Datei, eingebunden von /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/x86intrin.h:38,
+                 von /run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp/src.c:1:
+/run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp/src.c: In Funktion »function_xop«:
+/run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp/src.c:5:12: Fehler: »__builtin_ia32_vprotqi« erfordert ISA-Option -mxop
+    5 |     *dst = _mm_roti_epi64(*a, b);
+      |            ^~~~~~~~~~~~~~
+make[1]: *** [CMakeFiles/cmTC_33710.dir/build.make:78: CMakeFiles/cmTC_33710.dir/src.c.o] Fehler 1
+make[1]: Verzeichnis „/run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp“ wird verlassen
+make: *** [Makefile:127: cmTC_33710/fast] Fehler 2
+
+
+Source file was:
+#include <x86intrin.h>
+
+void function_xop(__m128i *dst, const __m128i *a, int b)
+{
+    *dst = _mm_roti_epi64(*a, b);
+}
+
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FEATURE_avx2_NOFLAG failed with the following output:
+Change Dir: /run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/sbin/make -f Makefile cmTC_3e1f6/fast && /usr/sbin/make  -f CMakeFiles/cmTC_3e1f6.dir/build.make CMakeFiles/cmTC_3e1f6.dir/build
+make[1]: Verzeichnis „/run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_3e1f6.dir/src.c.o
+/usr/sbin/cc -DFEATURE_avx2_NOFLAG  -Wall -Wno-strict-aliasing -maes  -o CMakeFiles/cmTC_3e1f6.dir/src.c.o -c "/run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp/src.c"
+/run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp/src.c: In Funktion »function_avx2«:
+/run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp/src.c:5:10: Warnung: AVX-Vektorrückgabe ohne eingeschaltetes AVX ändert das ABI [-Wpsabi]
+    5 |     *dst = _mm256_xor_si256(*a, *b);
+      |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+In Datei, eingebunden von /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/immintrin.h:47,
+                 von /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/x86intrin.h:32,
+                 von /run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp/src.c:1:
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/avx2intrin.h:913:1: Fehler: Inlining beim Aufruf von »_mm256_xor_si256« mit »always_inline« fehlgeschlagen: target specific option mismatch
+  913 | _mm256_xor_si256 (__m256i __A, __m256i __B)
+      | ^~~~~~~~~~~~~~~~
+/run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp/src.c:5:12: Anmerkung: von hier aufgerufen
+    5 |     *dst = _mm256_xor_si256(*a, *b);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [CMakeFiles/cmTC_3e1f6.dir/build.make:78: CMakeFiles/cmTC_3e1f6.dir/src.c.o] Fehler 1
+make[1]: Verzeichnis „/run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp“ wird verlassen
+make: *** [Makefile:127: cmTC_3e1f6/fast] Fehler 2
+
+
+Source file was:
+#include <x86intrin.h>
+
+void function_avx2(__m256i *dst, const __m256i *a, const __m256i *b)
+{
+    *dst = _mm256_xor_si256(*a, *b);
+}
+
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test FEATURE_avx512f_NOFLAG failed with the following output:
+Change Dir: /run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/sbin/make -f Makefile cmTC_63017/fast && /usr/sbin/make  -f CMakeFiles/cmTC_63017.dir/build.make CMakeFiles/cmTC_63017.dir/build
+make[1]: Verzeichnis „/run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_63017.dir/src.c.o
+/usr/sbin/cc -DFEATURE_avx512f_NOFLAG  -Wall -Wno-strict-aliasing -maes  -o CMakeFiles/cmTC_63017.dir/src.c.o -c "/run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp/src.c"
+In Datei, eingebunden von /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/immintrin.h:49,
+                 von /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/x86intrin.h:32,
+                 von /run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp/src.c:1:
+/run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp/src.c: In Funktion »function_avx512f«:
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/avx512fintrin.h:204:1: Fehler: Inlining beim Aufruf von »_mm512_undefined_epi32« mit »always_inline« fehlgeschlagen: target specific option mismatch
+  204 | _mm512_undefined_epi32 (void)
+      | ^~~~~~~~~~~~~~~~~~~~~~
+/run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp/src.c:5:12: Anmerkung: von hier aufgerufen
+    5 |     *dst = _mm512_ror_epi64(*a, 57);
+      |            ^~~~~~~~~~~~~~~~
+make[1]: *** [CMakeFiles/cmTC_63017.dir/build.make:78: CMakeFiles/cmTC_63017.dir/src.c.o] Fehler 1
+make[1]: Verzeichnis „/run/media/grisu/Random Sheis/Github/no-donation-xmrig/src/CMakeFiles/CMakeTmp“ wird verlassen
+make: *** [Makefile:127: cmTC_63017/fast] Fehler 2
+
+
+Source file was:
+#include <x86intrin.h>
+
+void function_avx512f(__m512i *dst, const __m512i *a)
+{
+    *dst = _mm512_ror_epi64(*a, 57);
+}
+
+int main(void) { return 0; }
+
