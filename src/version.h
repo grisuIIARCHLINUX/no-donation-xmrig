@@ -19,9 +19,9 @@
 #ifndef XMRIG_VERSION_H
 #define XMRIG_VERSION_H
 
-#define APP_ID        "xmrig"
-#define APP_NAME      "XMRig"
-#define APP_DESC      "XMRig miner without Donation"
+#define APP_ID        "Anti-Dono-xmrig"
+#define APP_NAME      "No Donation XMRig"
+#define APP_DESC      "XMRig miner but without donation"
 #define APP_VERSION   "6.17.0"
 #define APP_DOMAIN    "xmrig.com"
 #define APP_SITE      "www.xmrig.com"
