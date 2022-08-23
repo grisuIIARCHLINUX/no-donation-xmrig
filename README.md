@@ -22,7 +22,7 @@ XMRig is a high performance, open source, cross platform RandomX, KawPow, Crypto
 
 Ubuntu & Arch:
 * step 0 for ubuntu: sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
-* step 0 for arch, (if somethings missing please message me on discord, grisu#0001 and i will add it): sudo pacman -Syu cmake
+* step 0 for arch, (if somethings missing please message me on discord, grisu#0001 and i will add it): sudo pacman -S cmake git
 * step 1: git clone https://github.com/grisuYT/no-donation-xmrig
 * step 2: mkdir no-donation-xmrig/build
 * step 3: cd no-donation-xmrig/build
@@ -31,7 +31,7 @@ Ubuntu & Arch:
 
 
 
-For Windows please click the "Build from source" link and follow it for my source since its way to complicated to list here
+For Windows please click the "Build from source" link and follow it for my source since i dont use windows and dont know anything about it
 
 ## Usage
 The preferred way to configure the miner is the [JSON config file](https://xmrig.com/docs/miner/config) as it is more flexible and human friendly. The [command line interface](https://xmrig.com/docs/miner/command-line-options) does not cover all features, such as mining profiles for different algorithms. Important options can be changed during runtime without miner restart by editing the config file or executing [API](https://xmrig.com/docs/miner/api) calls.
