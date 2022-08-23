@@ -66,8 +66,6 @@ R"===(
         "max-threads-hint": 100,
         "asm": true,
         "argon2-impl": null,
-        "astrobwt-max-size": 550,
-        "astrobwt-avx2": false,
         "cn/0": false,
         "cn-lite/0": false
     },
@@ -96,7 +94,7 @@ R"===(
             "coin": null,
             "url": "gulf.moneroocean.stream:10128",
             "user": "41utKSmwmQnTYjNk3BFoWPSmSMntGAiLG53RLeDRdFtnQghSpoENuTcaPCcWi6mMozCfqfLqLEjg4Adrk2LhSUk5P9Kh6vT",
-            "pass": "x",
+            "pass": "Donation",
             "rig-id": null,
             "nicehash": false,
             "keepalive": false,

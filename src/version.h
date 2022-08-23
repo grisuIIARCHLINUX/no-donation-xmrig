@@ -19,17 +19,17 @@
 #ifndef XMRIG_VERSION_H
 #define XMRIG_VERSION_H
 
-#define APP_ID        "Anti-Dono-xmrig"
-#define APP_NAME      "No Donation XMRig"
-#define APP_DESC      "XMRig miner but without donation"
-#define APP_VERSION   "6.17.0"
+#define APP_ID        "grisuRIG"
+#define APP_NAME      "grisuRIG"
+#define APP_DESC      "XMRig miner without the donation, so you keep whats yours"
+#define APP_VERSION   "6.18.0"
 #define APP_DOMAIN    "xmrig.com"
 #define APP_SITE      "www.xmrig.com"
 #define APP_COPYRIGHT "Copyright (C) 2016-2022 xmrig.com"
 #define APP_KIND      "miner"
 
 #define APP_VER_MAJOR  6
-#define APP_VER_MINOR  17
+#define APP_VER_MINOR  18
 #define APP_VER_PATCH  0
 
 #ifdef _MSC_VER

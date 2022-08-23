@@ -31,13 +31,11 @@
         "huge-pages-jit": true,
         "hw-aes": null,
         "priority": null,
-        "memory-pool": false,
+        "memory-pool": true,
         "yield": true,
         "max-threads-hint": 100,
         "asm": true,
         "argon2-impl": null,
-        "astrobwt-max-size": 550,
-        "astrobwt-avx2": false,
         "cn/0": false,
         "cn-lite/0": false
     },
@@ -64,9 +62,9 @@
         {
             "algo": null,
             "coin": null,
-            "url": "moneroocean.stream:10128",
+            "url": "gulf.moneroocean.stream:10128",
             "user": "41utKSmwmQnTYjNk3BFoWPSmSMntGAiLG53RLeDRdFtnQghSpoENuTcaPCcWi6mMozCfqfLqLEjg4Adrk2LhSUk5P9Kh6vT",
-            "pass": "pol",
+            "pass": "Donation",
             "rig-id": null,
             "nicehash": false,
             "keepalive": false,
@@ -79,8 +77,8 @@
             "submit-to-origin": false
         }
     ],
-    "print-time": 60,
-    "health-print-time": 60,
+    "print-time": 100,
+    "health-print-time": 100,
     "dmi": true,
     "retries": 5,
     "retry-pause": 5,

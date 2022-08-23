@@ -49,6 +49,11 @@ The preferred way to configure the miner is the [JSON config file](https://xmrig
 * **[sech1](https://github.com/SChernykh)**
 * **[grisu] changed a few files for higher hashrates and removed donation to keep whats yours :)
 
+## Increase Speed
+
+run the script "enable_1gb_pages.sh" as sudo in the filespath /no-donation-xmrig/scripts/
+run xmrig as sudo and put --randomx-1gb-pages as a command line option
+
 ## Contacts
 * support@xmrig.com
 * [reddit](https://www.reddit.com/user/XMRig/)
