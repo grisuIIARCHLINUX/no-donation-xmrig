@@ -22,7 +22,7 @@ XMRig is a high performance, open source, cross platform RandomX, KawPow, Crypto
 
 Ubuntu & Arch:
 * step 0 for ubuntu: sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
-* step 0 for arch, (if somethings missing please message me on discord, grisu#0001 and i will add it): sudo pacman -S cmake git
+* step 0 for arch, (if somethings missing please message me on discord, grisu#9397 and i will add it): sudo pacman -S cmake git
 * step 1: git clone https://github.com/grisuYT/no-donation-xmrig
 * step 2: mkdir no-donation-xmrig/build
 * step 3: cd no-donation-xmrig/build
@@ -42,7 +42,7 @@ The preferred way to configure the miner is the [JSON config file](https://xmrig
 ## Donations
 * Default donation 0% (0 minute in 100 minutes, nothing at all :D) can be increased via option `donate-level` and you dont need to redownload and change manually from source code because i need to use this anyway so i make it public :D.
 * XMR: `48edfHu7V9Z84YzzMa6fUueoELZ9ZRXq9VetWzYGzKt52XU5xvqgzYnDK9URnRoJMk1j8nLwEVsaSWJ4fhdUyZijBGUicoD`
-* XMR grisu (not the creator of xmrig itself, only the 0% donation version): `41utKSmwmQnTYjNk3BFoWPSmSMntGAiLG53RLeDRdFtnQghSpoENuTcaPCcWi6mMozCfqfLqLEjg4Adrk2LhSUk5P9Kh6vT`
+* XMR grisu (not the creator of xmrig itself, only the 0% donation and slightly optimized version): `41utKSmwmQnTYjNk3BFoWPSmSMntGAiLG53RLeDRdFtnQghSpoENuTcaPCcWi6mMozCfqfLqLEjg4Adrk2LhSUk5P9Kh6vT`
 
 ## Developers
 * **[xmrig](https://github.com/xmrig)**
