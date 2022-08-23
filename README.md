@@ -15,10 +15,10 @@ XMRig is a high performance, open source, cross platform RandomX, KawPow, Crypto
 - **CUDA** for NVIDIA GPUs via external [CUDA plugin](https://github.com/xmrig/xmrig-cuda).
 
 ## Download
-* **[Binary releases](https://github.com/xmrig/xmrig/releases) doesnt include the 0% donation!!**
+* **[Binary releases](https://github.com/xmrig/xmrig/releases) doesnt include the 0% donation!! If you cant compile but need 0% donation check release tab**
 * **[Build from source](https://xmrig.com/docs/miner/build)**
 
-## Building commands for ez copy&paste+
+## Building commands for ez copy&paste
 
 Ubuntu & Arch:
 * step 0 for ubuntu: sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
